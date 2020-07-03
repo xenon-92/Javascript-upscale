@@ -1,0 +1,1 @@
+# Javascript scope and closures module
