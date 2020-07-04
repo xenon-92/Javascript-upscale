@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <script src="cheat.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>LEXICAL SCOPE</h1>
+        <h2>It is an authored time decision</h2>
+        <p>
+            Scope releated assignemnt are done via '=' or by formal parameter
+        </p>
+        <P> global variabale are also property of global object. Hence we can either specify it with window.globalvar or just globalvar</P>
+    </div>
+    <div>
+        <h1>Scope Lookups</h1>
+        <p>
+            Scope lookups stops once it finds the first match. It also indulges with the variable shadowing.
+        </p>
+        <button class="scopeLookUp">Scope lookup</button>
+        <h1>
+            Scope lookup fitfall, with variable shadowing
+        </h1>
+        <button class="scopeLookUpfitfall">Scope lookup fitfall</button>
+
+        <p>This can be fixed simply by adding a seperate varaible and not doing variable shadowing</p>
+        <button class="codeCorrection"> code correction</button>
+    </div>
+    <div>
+        <h1>CHEATING LEXICAL SCOPE</h1>
+        <h3>
+            <ul>
+                <li>eval</li>
+                <li>with</li>
+            </ul>
+        </h3>
+        <div>
+            <h4>Chetaing with eval</h4>
+            <div>
+                <button class="cheatLexical"> Cheat with eval</button>
+            </div>
+            <h4>Chetaing with with</h4>
+            <div>
+                <button class="cheatwith"> Cheat with with</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
