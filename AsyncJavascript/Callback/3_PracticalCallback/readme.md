@@ -24,3 +24,8 @@ console.log(data); // at this point the data is 'undefined'
 A standard solution is to provide a callback function, to the non blocking function.
 A callback is a function that a non-blocking function calls when it has really finished with the task. So we are aware that the non blocking function has really finished with the work and we can make use of the result to our desire.
 </p>
+ 
+> ![image](https://user-images.githubusercontent.com/43150419/86532993-a00cb200-beeb-11ea-8358-b04384ebf80e.png)
+
+### For an ajax failure we see
+> ![image](https://user-images.githubusercontent.com/43150419/86533019-ce8a8d00-beeb-11ea-887f-c3b28ad16652.png)
