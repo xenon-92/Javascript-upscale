@@ -103,7 +103,7 @@ document
   });
 
 /**
- * Data handler function from ajax's success/failure
+ * Data handler function from ajax's success
  */
 
 function handleData(res, res1, res2, res3) {
