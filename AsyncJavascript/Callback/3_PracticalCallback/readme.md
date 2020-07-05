@@ -17,7 +17,7 @@
 ## Then how do we get the result of the non-blocking function ?
 <p>Since the result of the non blocking function is not available yet we cannot go ahead and use the result, as in the blokcing  function case. Because at this point the result is undefined or null</p><br>
 <code>
-var data = fetchSomeData(url);
+var data = fetchSomeData(url);<br>
 console.log(data); // at this point the data is 'undefined'
 </code><br>
 <p>
