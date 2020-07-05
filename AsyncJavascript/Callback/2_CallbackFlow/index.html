@@ -1,0 +1,69 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Call back flow</title>
+  </head>
+  <body>
+    <h1>
+      <blockquote>
+        General flow of execution VS Asynchronus way of execution
+      </blockquote>
+    </h1>
+    <div style="margin-left: 131px;" class="card">
+      <h2>General flow of execution</h2>
+      <code>
+        console.log(start);<br />
+        console.log(middle);<br />
+        console.log(end); <br />
+        <br /><br /><br />
+        //output <br />
+        start<br />
+        middle<br />
+        end
+      </code>
+    </div>
+    <br />
+    <br />
+    <div style="margin-left: 131px;" class="card">
+      <h2>Asynchronous flow of execution</h2>
+      <code>
+        console.log(start);<br />
+        setTimeout(function(){ console.log(middle) })<br />
+        console.log(end); <br />
+        <br /><br /><br />
+        //output <br />
+        start<br />
+        end<br />
+        middle
+      </code>
+    </div>
+    <br><br>
+    <div style="margin-left: 131px;" class="card">
+      <h2>Nested callback, disrupting the flow of execution</h2>
+      <code>
+        //pseudocode<br />
+        doA(<br />
+        doB();<br />
+        doC(function(){<br />
+        doE()<br />
+        });<br />
+        doF()<br />
+        );<br />
+        doG()<br />
+        <br /><br />
+        //order of execution <br>
+        doA() -> doG() --> doB() --> doC() --> doF() --> doE()
+      </code>
+      <h3>
+          Open console log to view the results
+      </h3>
+      <button class="nestedCb">Nested callback example</button>
+    </div>
+  </body>
+</html>
