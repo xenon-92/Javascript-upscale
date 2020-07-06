@@ -1,0 +1,45 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <br /><br /><br />
+    <div class="container">
+      <h1>A long processing Task</h1>
+      <br>
+      <h3>The UI does not get hanged up while performing other operation</h3>
+      <br /><br />
+      <div class="card bg-info text-white">
+        <div class="card-body count">The count value will appear here</div>
+      </div>
+      <br />
+      <div class="card bg-warning text-white">
+        <div class="card-body piVal">The pi value will appear here</div>
+      </div>
+      <br /><br />
+      <button class="btn btn-primary getPI" enabled>
+        Calculate Pi
+      </button>
+      <button class="btn btn-warning reload">Reset</button>
+      <button class="btn btn-dark add">Add some value in dark card</button>
+    </div><br><br>
+    <div class="container">
+        <div class="card bg-dark text-white">
+    <div class="card-body addedVal">Dark card</div>
+  </div>
+    </div>
+  </body>
+</html>
