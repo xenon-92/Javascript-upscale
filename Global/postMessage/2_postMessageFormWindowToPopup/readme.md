@@ -22,4 +22,4 @@
 
 <br><br>
 
-> note the now in popup, <code>window equivalents to targetWindowRefrence</code>
+> note that in the popup, <code>window equivalents to targetWindowRefrence of parent</code>
