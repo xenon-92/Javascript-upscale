@@ -1,0 +1,50 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="parent.js" defer></script>
+    <title>Parent window</title>
+  </head>
+  <body>
+      <br><br>
+    <div class="container">
+      <h1>To and fro message from parent to child and child to parent</h1>
+    </div>
+    <br><br>
+    <div class="container">
+        <h5>INCOMING MESSAGES</h5>
+        <br>
+  <div class="card bg-warning text-white">
+    <div class="card-body incomingPlaceHolder"></div>
+  </div>
+  <br>
+    </div>
+    <div class="container">
+      <br /><br>
+      <div class="card bg-success text-black">
+        <div class="card-body incoming">
+          OUTGOING MESSAGES
+        </div>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <br />
+      <br />
+      <button type="button" class="btn btn-dark popupOpener">
+        Open popup
+      </button>
+      <button type="button" class="btn btn-dark parentPost">
+        Post message to child
+      </button>
+    </div>
+  </body>
+</html>
