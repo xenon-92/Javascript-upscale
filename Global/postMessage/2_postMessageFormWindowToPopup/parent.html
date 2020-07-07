@@ -1,0 +1,46 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="parent.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Send message from parent window to child</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="container">Send  messages across different window</h1>
+      <br><br>
+      <h3 class="container" style="font-weight: bolder;font-family: monospace;">
+        open the popup, type a message click on the Post message to a popup
+        button
+      </h3>
+    </div>
+    <br />
+    <div class="container">
+      <br />
+      <div class="card bg-success text-black">
+        <div class="card-body">
+          Type a Message here, on click it will get posted to the popup
+        </div>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <br />
+      <br />
+      <button type="button" class="btn btn-dark popupOpener">
+        Open popup
+      </button>
+      <button type="button" class="btn btn-dark postMessage">
+        Post message to a popup
+      </button>
+    </div>
+  </body>
+</html>
