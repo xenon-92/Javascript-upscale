@@ -16,6 +16,7 @@
     <script src="basicPromise.js" defer></script>
     <script src="2chainingPromises.js" defer></script>
     <script src="3CombiningPromisesAllRace.js" defer></script>
+    <script src="4errorHandling.js" defer></script>
     <title>Consuming Promises</title>
   </head>
   <body>
@@ -37,7 +38,6 @@
       <h2>Basic Promsie</h2>
       <button class="basicPromise">Demonstrate basic Promise</button>
     </div>
-    <br /><br />
     <div class="container">
       <br />
       <h2>Chaining Promises, btw it always resolves</h2>
@@ -49,6 +49,14 @@
       <h2>Promise.all()/Promise.race()</h2>
       <button class="promiseAll">Combine Promise with All</button>
       <button class="promiseRace">Race Promise with any</button>
+    </div>
+    <div class="container">
+      <br />
+      <h2>Error Handling</h2>
+      <button class="errBasic">Basic Error Handling</button>
+      <button class="resolvedHandledLast">Resolved but handled at last</button>
+      <button class="rejectedYetreturns">Rejected but returned</button>
+      <button class="resolvedThrowsError">Resolved but Throws error</button>
     </div>
   </body>
 </html>
