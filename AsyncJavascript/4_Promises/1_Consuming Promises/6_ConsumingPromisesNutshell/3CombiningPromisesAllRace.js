@@ -42,10 +42,10 @@ document.querySelector('.promiseRace').addEventListener('click', function () {
     .then(function (val) {
       console.log(val);
       return delay(0.5, 300);
-    })
-    .catch(function (err) {
-      console.table(err);
     });
+    // .catch(function (err) {
+    //   console.table(err);
+    // });
   var p2 = delay(0.5, 300)
     .then(function (val) {
       console.log(val);
@@ -54,10 +54,10 @@ document.querySelector('.promiseRace').addEventListener('click', function () {
     .then(function (val) {
       console.log(val);
       return delay(0.5, 700);
-    })
-    .catch(function (err) {
-      console.table(err);
     });
+    // .catch(function (err) {
+    //   console.table(err);
+    // });
 
   //master promise
   var master = Promise.race([p1, p2]);
